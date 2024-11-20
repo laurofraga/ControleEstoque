@@ -2,12 +2,13 @@
 {
     public class Categoria
     {
-        public int IdCategoria { get; set; }
+        public int Id { get; set; }
         public string Nome { get; set; }
         public string Descricao { get; set; }
-        public int FuncionarioResponsavel { get; set; }
+        public int? FuncionarioResponsavelId { get; set; }
 
-        public Funcionario FuncionarioResponsavel { get; set; }
-        public ICollection<Produto> Produtos {  get; set; }
+        public Funcionario FuncionarioResponsavel  { get; set; }
+
+        public List<Produto> Produtos { get; set; } = new List<Produto>();
     }
 }

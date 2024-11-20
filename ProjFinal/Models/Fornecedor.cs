@@ -2,11 +2,11 @@
 {
     public class Fornecedor
     {
-        public int IdFonecedor { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Contato { get; set; }
         public string Endereco { get; set; }
 
-        public ICollection<Produto> Produtos { get; set; }
+        public List<Produto> Produtos { get; set; } = new List<Produto>();  
     }
 }

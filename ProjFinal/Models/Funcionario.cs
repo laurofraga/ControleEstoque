@@ -2,13 +2,13 @@
 {
     public class Funcionario
     {
-        public int IdFuncionario { get; set; }
-        public string Name { get; set; }
-        public String User {  get; set; }
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public String User { get; set; }
         public string Password { get; set; }
         public string Cargo { get; set; }
-        
-        public ICollection<Categoria> CategoriasResponsaveis { get; set; }
-        public ICollection<Movimentacao> Movimentacoes { get; set; }
+
+        public List<Categoria> Categorias { get; set; } = new List<Categoria>();
+        public List<Movimentacao> Movimentacao { get; set; } = new List<Movimentacao>();
     }
 }
