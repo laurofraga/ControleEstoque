@@ -1,6 +1,7 @@
-﻿namespace ProjFinal.Models
+﻿using Microsoft.AspNetCore.Identity;
+namespace ProjFinal.Models
 {
-    public class Funcionario
+    public class Funcionario : IdentityUser
     {
         public int Id { get; set; }
         public string Nome { get; set; }
